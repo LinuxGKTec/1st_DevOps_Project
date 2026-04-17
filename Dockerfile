@@ -21,6 +21,9 @@ ADD https://github.com/themewagon/photogenic/archive/refs/heads/master.zip /var/
 # Set the working directory
 WORKDIR /var/www/html/
 
+# Remove by default index.html
+RUN rm -rf index.html
+
 # Unzip the file, move contents up, and clean up
 RUN unzip photogenic.zip && \
     cp -rvf photogenic-master/* . && \
