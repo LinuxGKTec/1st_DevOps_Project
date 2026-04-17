@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     apache2 \
     zip \
     unzip \
-    openjdk-17-jr-headless \
+    openjdk-17-jre-headless \
     curl \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
