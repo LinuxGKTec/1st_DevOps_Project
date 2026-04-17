@@ -24,7 +24,7 @@ WORKDIR /var/www/html/
 # Unzip the file, move contents up, and clean up
 RUN unzip photogenic.zip && \
     cp -rvf photogenic-master/* . && \
-    rm -rf photogenic-master photogenic.zip index.html
+    rm -rf photogenic-master photogenic.zip
 
 # Expose Port 80 for web traffic
 EXPOSE 80
