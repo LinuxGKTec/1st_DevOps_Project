@@ -30,7 +30,7 @@ RUN unzip photogenic.zip && \
     rm -rf photogenic-master photogenic.zip
 
 # Expose Port 80 for web traffic
-EXPOSE 80 8080
+EXPOSE 80
 
 # Start Apache in the foreground
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
