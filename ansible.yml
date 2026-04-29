@@ -1,5 +1,5 @@
 - hosts: k8s
-  become: true
+  #become: true
   tasks: 
      #- name: delete old deployment
       # command: kubectl delete -f /home/ubuntu/deployment.yml
