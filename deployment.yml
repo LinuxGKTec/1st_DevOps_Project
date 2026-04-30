@@ -1,0 +1,20 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+   name: linuxgktech
+spec:
+   replicas: 2
+   selector:      # tells the controller which pods to watch/belong to
+    matchLabels:
+     app: linuxgktech
+   template:
+      metadata:
+        labels:
+          app: linuxgktech
+      spec:
+       containers:
+        - name: devops
+          image: gautam19nov1991/kube
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 80
